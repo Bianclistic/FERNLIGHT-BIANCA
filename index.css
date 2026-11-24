@@ -148,11 +148,6 @@ section img {
   font-size: 28px;
 }
 
-.section3 > div:nth-child(2) {
-  margin-bottom: 30px;
-  color: rgba(128, 128, 128, 0.214);
-}
-
 .icon2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -203,16 +198,17 @@ section img {
   align-items: center;
   gap: 20px;
   padding: 50px 8%;
-  background-color: rgb(209, 227, 209);
+  background-color: rgb(21, 28, 21);
 }
 
 .foot h3 {
   font-size: 23px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .foot p {
-  color: rgba(71, 0, 0, 0);
+  color: white;
 }
 
 .footer form {
@@ -228,8 +224,8 @@ section img {
 }
 
 .mail {
-  background-color: #315c3b;
-  color: white;
+  background-color: orange;
+  color: black;
   border: none;
   padding: 13px 22px;
   border-radius: 7px;
@@ -243,7 +239,7 @@ section img {
   background-color: green;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .header {
     flex-wrap: wrap;
     gap: 20px;
