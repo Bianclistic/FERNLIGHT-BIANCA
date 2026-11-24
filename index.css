@@ -35,6 +35,9 @@ main {
   border-radius: 25px;
   cursor: pointer;
 }
+.burger {
+  display: none;
+}
 
 section {
   display: flex;
@@ -245,6 +248,9 @@ section img {
     flex-wrap: wrap;
     gap: 20px;
   }
+  .burger {
+    display: flex;
+  }
 
   section {
     flex-direction: column;
@@ -292,6 +298,9 @@ section img {
 
   .header a {
     font-size: 13px;
+  }
+  .burger {
+    display: flex;
   }
 
   section {
