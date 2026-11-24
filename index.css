@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background-color: white;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #294b35;
+}
+
+.header a {
+  text-decoration: none;
+  color: #394b3e;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 8%;
+  gap: 40px;
+  background-color: rgb(245, 240, 240);
+}
+
+.plants {
+  width: 50%;
+}
+
+.plants h3 {
+  color: lightgreen;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.plants h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.plants p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+section img {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.btn3 {
+  padding: 13px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn2 {
+  padding: 13px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn3 {
+  background-color: white;
+  color: black;
+  border: none;
+  border-color: black;
+}
+
+.btn2 {
+  background-color: brown;
+  border: 1px brown;
+  color: white;
+  margin-left: 10px;
+}
+
+.why {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.why h2 {
+  font-size: 30px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px 8% 70px;
+}
+
+.icons {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid rgb(185, 227, 185);
+  background-color: rgb(245, 240, 240);
+  flex: 1;
+}
+
+.icons h4 {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.icons p {
+  color: black;
+  line-height: 1.6;
+}
+
+.section3 {
+  padding: 50px 8%;
+}
+
+.pop {
+  margin-bottom: 10px;
+}
+
+.pop h3 {
+  font-size: 28px;
+}
+
+.section3 > div:nth-child(2) {
+  margin-bottom: 30px;
+  color: rgba(128, 128, 128, 0.214);
+}
+
+.icon2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.image {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image h4 {
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+.image p {
+  color: rgba(128, 128, 128, 0.153);
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.image h3 {
+  margin-bottom: 15px;
+}
+
+.add {
+  background-color: #315c3b;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 8%;
+  background-color: rgb(209, 227, 209);
+}
+
+.foot h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.foot p {
+  color: rgba(71, 0, 0, 0);
+}
+
+.footer form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer input {
+  padding: 13px;
+  border: 1px solid #b9c6b8;
+  border-radius: 7px;
+  outline: none;
+}
+
+.mail {
+  background-color: #315c3b;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.add:hover,
+.btn:hover,
+.btn2:hover,
+.mail:hover {
+  background-color: green;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .plants {
+    width: 100%;
+  }
+
+  .plants h2 {
+    font-size: 35px;
+  }
+
+  section img {
+    max-width: 100%;
+  }
+
+  .section2 {
+    flex-direction: column;
+  }
+
+  .icon2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer form {
+    width: 100%;
+  }
+
+  .footer input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header a {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .plants h2 {
+    font-size: 30px;
+  }
+
+  .section2,
+  .section3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .icon2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 35px 20px;
+  }
+
+  .footer form {
+    flex-direction: column;
+  }
+
+  .footer input,
+  .mail {
+    width: 100%;
+  }
+}
